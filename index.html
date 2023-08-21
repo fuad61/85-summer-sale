@@ -22,7 +22,7 @@
                 
             </div>
             <div class="">
-                <img src="./Summer 1.png" alt="">
+                <img src="images/Summer 1.png" alt="">
             </div>
         </div>
         </section>
@@ -33,23 +33,25 @@
           main
         -->
 
-        <section class="w-[90%] mx-auto mt-24 bg-slate-50">
+        <section class=" w-[90%] mx-auto mt-24 pt-5  bg-slate-50">
            
-            <div class="flex flex-col md:flex-row justify-evenly">
+            <div class=" w-[100%] ml-5 sm:block lg:flex  gap-5 ">
 
-            <div>
-              <h1 class="text-3xl font-semibold">Kitchenware</h1>
-            <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-stretch gap-6">
+            <div class="w-[70%]">
+              <h1 class="text-3xl sm:text-center lg:text-left mb-2 font-semibold">Kitchenware</h1>
+
+            <!-- <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-stretch gap-6"> -->
+              <div class="w-[100%] grid sm:grid-cols-1 lg:grid-cols-3 gap-4  mx-auto" >
                 <!--product card-->
              
-                <div class="card card-compact w-80 border bg-white ">
-                    <figure class="bg-gray-50 p-6"><img src="./prod1.png" alt="K. Accessories" /></figure>
+                <div class="card card-compactw-[33%] border bg-white   mb-5" onclick="KitchenWareOne()">
+                    <figure class="bg-gray-50 p-6"><img src="images/prod1.png" alt="K. Accessories" /></figure>
                     <br>
                     <br>
                    
           
                       
-              <div class="rating rating-half items-center bg-opacity-30 mx-auto mt-6 mb-8">
+              <div class="rating rating-half items-center bg-opacity-30 mx-auto mt-6 mb-8" >
                         <input type="radio" name="rating-20" class="rating-hidden" />
                         <input type="radio" name="rating-20" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
                         <input type="radio" name="rating-20" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
@@ -63,13 +65,21 @@
                         <input type="radio" name="rating-20" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         
                       </div>
-                      <div class="text-center font-semibold mb-4">Kitchenware</div>
-                      <p class="text-center">39.00 TK</p>
+                      <div class="mb-2">
+                     
+                        <p id="kit" class="text-center font-semibold mb-1">Kitchenware_1</p>
+                     
+                      <div class="flex gap-2 px-auto justify-center">
+                        <p id="kitPrice" class="text-center  font-semibold">39.00</p>
+                        <P>Tk /=</P>
+                      </div>
+                      </div>
 
                      
                     </div>
-                <div class="card card-compact w-80  border bg-white ">
-                    <figure class="bg-gray-50 p-5"><img src="./prod2.png" alt="K. Accessories" /></figure>
+
+                <div  class="card card-compactw-[33%] border bg-white   mb-5" onclick="KitchenWareTwo()">
+                    <figure class="bg-gray-50 p-5"><img src="images/prod2.png" alt="K. Accessories" /></figure>
                     <br>
                     <br>
                    
@@ -89,13 +99,18 @@
                         <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                         
                       </div>
-                      <div class="text-center font-semibold mb-4">Kitchenware</div>
-                      <p class="text-center">39.00 TK</p>
+                      <div class="mb-2">
+                        <p id="kit_2" class="text-center font-semibold mb-1">Kitchenware_2</p>
+                        <div class="flex gap-2 px-auto justify-center">
+                          <p id="kitPrice_2" class="text-center  font-semibold">39.00</p>
+                          <P>Tk /=</P>
+                        </div>
+                        </div>
 
                      
                     </div>
-                <div class="card card-compact w-80 border bg-white ">
-                    <figure class="bg-gray-50 p-6"><img src="./prod3.png" alt="K. Accessories" /></figure>
+                <div  class="card card-compactw-[33%] border bg-white   mb-5" onclick="KitchenWareThree()">
+                    <figure class="bg-gray-50 p-6"><img src="images/prod3.png" alt="K. Accessories" /></figure>
                     <br>
                     <br>
                    
@@ -115,23 +130,27 @@
                       <input type="radio" name="rating-205" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                       
                     </div>
-                      <div class="text-center font-semibold mb-4">Kitchenware</div>
-                      <p class="text-center">39.00 TK</p>
-
+                    <div class="mb-2">
+                      <p id="kit_3" class="text-center font-semibold mb-1">Kitchenware_3</p>
+                      <div class="flex gap-2 px-auto justify-center">
+                        <p id="kitPrice_3" class="text-center  font-semibold">39.00</p>
+                        <P>Tk /=</P>
+                      </div>
+                      </div>
                      
                     </div>
              
                   
                
-                </div>
+            </div>
                    <!--sports wear-->
 
-                   <h1 class="text-3xl font-semibold mt-10">Sports ware</h1>
-                   <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-stretch gap-6">
+                   <h1 class="text-3xl sm:text-center lg:text-left mb-2 font-semibold">Sports ware</h1>
+                   <div  class="w-[100%] grid sm:grid-cols-1 lg:grid-cols-3 gap-4  mx-auto">
                    
                  
-                    <div class="card card-compact w-80 border bg-white ">
-                        <figure class="bg-gray-50 p-6"><img src="./prod7.png" alt="K. Accessories " /></figure>
+                    <div class="card card-compactw-[33%] border bg-white   mb-5" onclick="sportsWareOne()">
+                        <figure class="bg-gray-50 p-6"><img src="images/prod7.png" alt="K. Accessories " /></figure>
 
                         <br>
                        
@@ -150,13 +169,18 @@
                             <input type="radio" name="rating-202" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                             
                           </div>
-                          <div class="text-center font-semibold mb-4">Kitchenware</div>
-                          <p class="text-center">39.00 TK</p>
+                          <div class="mb-2">
+                            <p id="sports" class="text-center font-semibold mb-4">SportsWare_1</p>
+                            <div class="flex gap-2 px-auto justify-center">
+                              <p id="sportsPrice" class="text-center  font-semibold">59.00</p>
+                              <P>Tk /=</P>
+                            </div>
+                            </div>
     
                          
                         </div>
-                    <div class="card card-compact w-80  border bg-white ">
-                        <figure class="bg-gray-50 p-6"><img src="./prod5.png" alt="K. Accessories" /></figure>
+                    <div class="card card-compactw-[33%] border bg-white   mb-5"  onclick="sportsWareTwo()">
+                        <figure class="bg-gray-50 p-6"><img src="images/prod5.png" alt="K. Accessories" /></figure>
                 
                        
               
@@ -175,13 +199,18 @@
                             <input type="radio" name="rating-120" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                             
                           </div>
-                          <div class="text-center font-semibold mb-4">Kitchenware</div>
-                          <p class="text-center">39.00 TK</p>
+                          <div class="mb-2">
+                            <p id="sports_2" class="text-center font-semibold mb-4">SportsWare_2</p>
+                            <div class="flex gap-2 px-auto justify-center">
+                              <p id="sportsPrice_2" class="text-center  font-semibold">139.00</p>
+                              <P>Tk /=</P>
+                            </div>
+                            </div>
     
                          
                         </div>
-                    <div class="card card-compact w-80 border bg-white ">
-                        <figure class="bg-gray-50 p-6"><img src="./prod6.png" alt="K. Accessories" /></figure>
+                    <div  class="card card-compactw-[33%] border bg-white   mb-5"  onclick="sportsWareThree()">
+                        <figure class="bg-gray-50 p-6"><img src="images/prod6.png" alt="K. Accessories" /></figure>
               
                           
                   <div class="rating rating-half items-center bg-opacity-30 mx-auto mt-6 mb-8">
@@ -198,8 +227,13 @@
                             <input type="radio" name="rating-220" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
                             
                           </div>
-                          <div class="text-center font-semibold mb-4">Kitchenware</div>
-                          <p class="text-center">39.00 TK</p>
+                          <div class="mb-2">
+                            <p id="sports_3" class="text-center font-semibold mb-4">SportsWare_3</p>
+                            <div class="flex gap-2 px-auto justify-center">
+                              <p id="sportsPrice_3" class="text-center  font-semibold">39.00</p>
+                              <P>Tk /=</P>
+                            </div>
+                            </div>
     
                          
                         </div>
@@ -209,14 +243,114 @@
                     </div>
               </div>
             
-            <div class="text-2xl">
+            <div class="w-[20%] ">
                  <!--product or item calculations-->
-                 <h3>Have coupon?</h3>
-                 <input type="text" class="text bg-slate-100 p-2 border rounded-s-md" placeholder="coupon?"><button class="bg-pink-500 rounded-e-md text-white p-2 border-2 hover:bg-blue-200">Apply</button>
-        </div>
+                 <h5 class="mb-5" >Have coupon?</h5>
+                <div class=" flex gap-2">
+                 <div>
+                  <input id="coupon" type="text" class="text mb-2 bg-slate-100 p-2 border rounded-s-md" placeholder="coupon?">
+                 </div>
+                 <div>
+                  <button id="couponBut" disabled onclick="applyCoupon()" class="bg-pink-500 rounded-e-md btn text-white p-2 border-2 hover:bg-blue-200" >Apply</button>
+                 </div>
+                </div>
+                <div class="mb-5 ml-4">
+                  <ol  type="1"  id="list"  class="list-decimal font-bold" >
+                    
+                
+                  </ol>
+                </div>
+
+                <div class="flex">
+                  <p class="font-semibold">Total Price: </p>
+                  <p class="font-bold  text-red-700" id="totalPrice"> 00.00 </p>
+                  <p class="font-semibold">  Tk /=</p>
+                </div>
+                <div class="flex">
+                  <p class="font-semibold">Discount :</p>
+                  <p class="font-bold text-green-600" id="discount"> 00.00 </p>
+                  <p class="font-semibold">Tk /=</p>
+                </div>
+                <div class="flex">
+                  <p class="font-semibold">Total :</p>
+                  <p class="font-bold  text-red-700" id="total"> 00.00 </p>
+                  <p class="font-semibold">Tk /=</p>
+                </div>
+
+                
+                <button id="PurchaseButton" disabled class="btn bg-pink-500 rounded-e-md text-white p-2 border-2 hover:bg-blue-200" onclick="my_modal_1.showModal()"  >Make a Purchase</button>
+            </div>
+
+
+
+            
+
+
+      </div>
+
+
+<!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal_1" class="modal">
+  <form method="dialog" class="modal-box items-center">
+    <img class="mx-auto" src="./images/congo.png " alt="">
+    <h3 class="font-bold text-5xl text-center">Congratulations</h3>
+    <p class="py-4 text-center">Your Purchase the product</p>
+    <div class="flex items-center">
+      <!-- if there is a button in form, it will close the modal -->
+      <button onClick="window.location.reload()" class="btn mx-auto bg-pink-500">Go Home</button>
+      </div>
+    
+  </form>
+</dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
         </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
     </main>
 
-    
+    <script src="/app.js"></script>
 </body>
 </html>
